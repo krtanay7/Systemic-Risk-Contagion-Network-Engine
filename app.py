@@ -26,7 +26,7 @@ time_step = st.sidebar.slider("Time Step", 1, 20, 1, 1)
 st.sidebar.header("Simulation Controls")
 
 st.sidebar.markdown("""
-### 🎨 Color Guide (Risk Intensity)
+###  Color Guide (Risk Intensity)
 - 🔵 Blue → Low risk / low propagated impact  
 - 🟣 Pink / Purple → Medium risk  
 - 🟠 Orange → High risk  
@@ -34,7 +34,7 @@ st.sidebar.markdown("""
 
 ---
 
-### 🧠 How Simulation Works
+###  How Simulation Works
 - Shock starts from selected asset
 - Risk spreads through correlated assets
 - Decay speed reduces impact over time
