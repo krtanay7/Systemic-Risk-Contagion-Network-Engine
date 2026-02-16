@@ -25,21 +25,42 @@ corr_threshold = st.sidebar.slider("Correlation Threshold", 0.0, 1.0, 0.3, 0.01)
 time_step = st.sidebar.slider("Time Step", 1, 20, 1, 1)
 st.sidebar.header("Simulation Controls")
 
-
 st.sidebar.markdown("""
-###  Color Guide (Risk Intensity)
+### 🎨 Color Guide (Risk Intensity)
 - 🔵 Blue → Low risk / low propagated impact  
 - 🟣 Pink / Purple → Medium risk  
 - 🟠 Orange → High risk  
 - 🔴 Red / 🟡 Yellow → Extreme systemic stress (highest impact)
-  
 
-### How Simulation Works
+---
+
+### 🧠 How Simulation Works
 - Shock starts from selected asset
 - Risk spreads through correlated assets
 - Decay speed reduces impact over time
 - Colors update based on current stress level
-""")
+
+---
+
+<div style='text-align:center; color:#888; font-size:13px;'>
+
+Built by 
+<a href="https://www.linkedin.com/in/kumar-tanay97/" target="_blank"
+style="text-decoration:none; color:#888;">
+<b>Kr Tanay</b>
+</a>
+|
+<a href="https://github.com/krtanay7" target="_blank"
+style="text-decoration:none; color:#888;">
+<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+width="14" style="vertical-align:middle; margin-right:5px;">
+GitHub
+</a>
+
+</div>
+""", unsafe_allow_html=True)
+
+
 
 
 # Data loading
@@ -69,3 +90,31 @@ st.plotly_chart(fig, use_container_width=True)
 # Metrics display
 st.subheader("Systemic Risk Metrics")
 st.json(metrics)
+
+
+# FOOTER
+st.markdown("""
+<div style="
+    text-align:center;
+    color:#666;
+    margin-top:40px;
+    font-size:14px;
+">
+
+Built with ❤️ by 
+<a href="https://www.linkedin.com/in/kumar-tanay97/" target="_blank" 
+style="text-decoration:none; color:#888;">
+<b>K Tanay</b>
+</a>
+| 
+<a href="https://github.com/krtanay7" target="_blank" 
+style="text-decoration:none; color:#888;">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+         width="18" style="vertical-align:middle; margin-right:6px;">
+    GitHub
+</a>
+
+</div>
+""", unsafe_allow_html=True)
+
+
