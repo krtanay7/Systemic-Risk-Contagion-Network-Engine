@@ -2,9 +2,14 @@
 
 A modular Streamlit application to model and visualize **financial contagion** across interconnected assets in 3D.
 
-<img width="2997" height="1464" alt="systematic" src="https://github.com/user-attachments/assets/1e8dde0c-9501-47c2-ae74-822d8bedbe7f" />
+<img width="2997" height="1464" alt="systematic" src="\prototype\Engine.png" />
 
 ---
+
+## 🌐 Live Demo
+
+🔗 https://systemic-risk-contagion-network-engine.streamlit.app/
+
 
 ## Systemic Risk Modeling
 
